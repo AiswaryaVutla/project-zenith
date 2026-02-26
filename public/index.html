@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZENITH Blog</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar">
+    <h1>ZENITH</h1>
+    <div>
+      <button id="toggleMode">🌙</button>
+      <button id="openEditor">+ New Post</button>
+    </div>
+  </nav>
+
+  <main>
+    <section id="editor" class="hidden">
+      <h2>Create Post</h2>
+      <input type="text" id="title" placeholder="Title" />
+      <input type="text" id="category" placeholder="Category" />
+      <textarea id="content" placeholder="Write your content..."></textarea>
+      <button id="savePost">Publish</button>
+    </section>
+
+    <section id="postsContainer" class="grid"></section>
+    <div id="singlePost" class="hidden single-view">
+      <button id="backBtn">⬅ Back</button>
+      <h2 id="singleTitle"></h2>
+      <p id="singleCategory"></p>
+      <p id="singleContent"></p>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

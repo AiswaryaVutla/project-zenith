@@ -1,0 +1,206 @@
+/* =========================
+   ZENITH — Warm Sage Theme
+========================= */
+
+:root {
+  --bg: #f8f6f2;               /* warm ivory */
+  --text: #2f3e34;             /* deep sage */
+  --card: #ffffff;             
+  --accent: #8aa38b;           /* soft sage */
+  --accent-dark: #6f8c73;
+  --border: #e6e2db;
+  --shadow: rgba(0, 0, 0, 0.05);
+}
+
+/* Dark Mode */
+body.dark {
+  --bg: #1f2622;
+  --text: #f1f5f2;
+  --card: #2c342f;
+  --accent: #a8c3ad;
+  --accent-dark: #8fb29a;
+  --border: #3b443f;
+  --shadow: rgba(0, 0, 0, 0.3);
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.4s ease, color 0.4s ease;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 60px;
+  background: var(--card);
+  border-bottom: 1px solid var(--border);
+  box-shadow: 0 2px 10px var(--shadow);
+}
+
+.navbar h1 {
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: var(--accent-dark);
+  font-size: 1.8rem;
+  letter-spacing: 4px;
+}
+
+/* ================= BUTTONS ================= */
+
+button {
+  padding: 8px 16px;
+  border-radius: 30px;
+  border: none;
+  background: var(--accent);
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: var(--accent-dark);
+  transform: translateY(-2px);
+}
+
+/* ================= GRID ================= */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 60px;
+}
+
+/* ================= CARD ================= */
+
+.card {
+  background: var(--card);
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0 8px 20px var(--shadow);
+  transition: all 0.3s ease;
+  border: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card p {
+  line-height: 1.6;
+  opacity: 0.85;
+  margin-bottom: 12px;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px var(--shadow);
+}
+
+.card h3 {
+  margin-top: 0;
+  font-weight: 600;
+}
+
+.category {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: rgba(138, 163, 139, 0.15);
+  color: var(--accent-dark);
+  padding: 4px 10px;
+  border-radius: 20px;
+  width: fit-content;
+}
+
+/* ================= EDITOR ================= */
+
+#editor {
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 600px;
+}
+
+#editor input,
+#editor textarea {
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  font-family: 'Poppins', sans-serif;
+  background: var(--card);
+  color: var(--text);
+  transition: 0.3s ease;
+}
+
+#editor input:focus,
+#editor textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(138, 163, 139, 0.2);
+}
+
+#editor textarea {
+  min-height: 120px;
+  resize: none;
+}
+
+.hidden {
+  display: none;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 20px;
+  }
+
+  .grid {
+    padding: 30px;
+  }
+
+  #editor {
+    padding: 30px;
+  }
+}
+.card {
+  animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+} 
+.single-view {
+  padding: 60px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.single-view h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.single-view p {
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+#backBtn {
+  margin-bottom: 30px;
+}      
