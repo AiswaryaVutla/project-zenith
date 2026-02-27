@@ -11,8 +11,7 @@ const PORT = process.env.PORT || 3000;
 // Middleware
 app.use(cors());
 app.use(express.json());
-app.use(express.static(path.join(__dirname, "public")));
-
+app.use(express.static(path.join(__dirname, "../public")));
 const client = new MongoClient(process.env.MONGO_URI);
 
 let postsCollection;
@@ -39,7 +38,7 @@ startServer();
 // ==========================
 
 // GET all posts
-app.get("/api/posts", async (req, res) => {
+app.get("/posts", async (req, res) => {
   try {
     const posts = await postsCollection
       .find()
@@ -53,7 +52,7 @@ app.get("/api/posts", async (req, res) => {
 
 
 // CREATE post
-app.post("/api/posts", async (req, res) => {
+app.post("/posts", async (req, res) => {
   try {
     const { title, category, content } = req.body;
 
@@ -74,7 +73,7 @@ app.post("/api/posts", async (req, res) => {
 
 
 // DELETE post
-app.delete("/api/posts/:id", async (req, res) => {
+app.delete("/posts/:id", async (req, res) => {
   try {
     const { id } = req.params;
 
@@ -91,7 +90,7 @@ app.delete("/api/posts/:id", async (req, res) => {
 // ========================
 // Update Post (PATCH)
 // ========================
-app.patch("/api/posts/:id", async (req, res) => {
+app.patch("/posts/:id", async (req, res) => {
   try {
     const { id } = req.params;
     const { title, category, content } = req.body;
