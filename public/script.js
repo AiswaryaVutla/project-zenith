@@ -18,7 +18,7 @@ const contentInput = document.getElementById("content");
 // Fetch & Render Posts
 // ========================
 async function fetchPosts() {
-  const res = await fetch("/api/posts");
+  const res = await fetch("/posts");
   const posts = await res.json();
   renderPosts(posts);
 }
@@ -66,7 +66,7 @@ savePostBtn.addEventListener("click", async () => {
 
   if (editingPostId) {
     // UPDATE MODE
-    await fetch(`/api/posts/${editingPostId}`, {
+    await fetch(`/posts/${editingPostId}`, {
       method: "PATCH",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ title, category, content })
@@ -76,7 +76,7 @@ savePostBtn.addEventListener("click", async () => {
     savePostBtn.textContent = "Publish";
   } else {
     // CREATE MODE
-    await fetch("/api/posts", {
+    await fetch("/posts", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ title, category, content })
@@ -95,7 +95,7 @@ savePostBtn.addEventListener("click", async () => {
 // Delete Post
 // ========================
 async function deletePost(id) {
-  await fetch(`/api/posts/${id}`, {
+  await fetch(`/posts/${id}`, {
     method: "DELETE"
   });
 
