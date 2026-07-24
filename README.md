@@ -153,7 +153,7 @@ This project strengthened my understanding of:
 
 Watch a complete demonstration of the application on LinkedIn:
 
-**[https://www.linkedin.com/posts/aiswarya-vutla1808_developerjourney-internshipexperience-fullstack-activity-7433138317103357952-ozB8?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFEtOfwBfEu9pg2GEvAEZK8UwrQmOXlnBXE]**
+**[LinkedIn Post](https://www.linkedin.com/posts/aiswarya-vutla1808_developerjourney-internshipexperience-fullstack-activity-7433138317103357952-ozB8?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFEtOfwBfEu9pg2GEvAEZK8UwrQmOXlnBXE)**
 
 ---
 
