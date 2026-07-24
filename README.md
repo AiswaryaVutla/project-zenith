@@ -8,15 +8,15 @@ The project allows users to create, view, edit, and delete blog posts while ensu
 
 ## ✨ Features
 
-- 📝 Create, edit, and delete blog posts
-- 📖 Read and manage published blogs
-- ⚡ RESTful API architecture
-- 🗂️ Complete CRUD functionality
-- 🌙 Light & Dark Mode support
-- 📱 Responsive design across devices
-- ☁️ MongoDB Atlas cloud database integration
-- 🚀 Deployed using Vercel
-- 💻 Clean and modular project structure
+-  Create, edit, and delete blog posts
+-  Read and manage published blogs
+-  RESTful API architecture
+-  Complete CRUD functionality
+-  Light & Dark Mode support
+-  Responsive design across devices
+-  MongoDB Atlas cloud database integration
+-  Deployed using Vercel
+-  Clean and modular project structure
 
 ---
 
@@ -153,7 +153,7 @@ This project strengthened my understanding of:
 
 Watch a complete demonstration of the application on LinkedIn:
 
-**[https://www.linkedin.com/posts/your-post-link](https://www.linkedin.com/posts/aiswarya-vutla1808_developerjourney-internshipexperience-fullstack-activity-7433138317103357952-ozB8?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFEtOfwBfEu9pg2GEvAEZK8UwrQmOXlnBXE)**
+**[https://www.linkedin.com/posts/aiswarya-vutla1808_developerjourney-internshipexperience-fullstack-activity-7433138317103357952-ozB8?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFEtOfwBfEu9pg2GEvAEZK8UwrQmOXlnBXE]**
 
 ---
 
